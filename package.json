@@ -1,0 +1,19 @@
+{
+  "name": "ot",
+  "version": "1.0.0",
+  "description": "![Oregon Trail](https://archive.org/serve/msdos_Oregon_Trail_The_1990/Oregon_Trail_The_1990_screenshot.gif)",
+  "main": "processor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PortlandMagicNight/2017-05-9-Oregon-Trail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PortlandMagicNight/2017-05-9-Oregon-Trail/issues"
+  },
+  "homepage": "https://github.com/PortlandMagicNight/2017-05-9-Oregon-Trail#readme"
+}
