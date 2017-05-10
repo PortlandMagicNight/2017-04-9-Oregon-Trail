@@ -6,22 +6,21 @@
 //   this.health = health;
 // }
 
-var Actions = {wagonWheelBroke:
-  { name: "wagonWheelBroke",
-    inventoryAfected : "wagon",
-    outcome: "wagonDisabled",
-    remedy: "useWheel",
-    probabilities: {
-      banker: 10,
-      carpenter: 90,
-      teacher: 40,
-      farmer: 80
+var Event = function() {
+  this.actions = {
+    wagonWheelBroke: {
+      name: "wagonWheelBroke",
+      inventoryAfected : "wagon",
+      outcome: "wagonDisabled",
+      remedy: "useWheel",
+      probabilities: {
+        banker: 10,
+        carpenter: 90,
+        teacher: 40,
+        farmer: 80
       }
-    },
+    }
   }
-
-var Event = function(actions) {
-  this.actions = actions;
 }
 
 Event.prototype.call = function(party) {

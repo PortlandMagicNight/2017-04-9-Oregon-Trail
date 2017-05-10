@@ -1,22 +1,18 @@
-window.prompt("Welcome to Oregon Trail!\nWhat do you want to do?")
+var party;
+var game;
 
-var Game = {
-  setup: function() {
+var Game = function(party) {
+  this.eventLoop = function() {
     var eventLoop = [];
 
     for(var i = 0; i <= 27; i++) {
-      var event = 'event ' + i;
-      eventLoop.push(event);
-
-      for(var j = 0; j < 3; j++) {
-        var td = 'td ' + j;
-        eventLoop.push(td);
-      }
+      eventLoop.push(new Event());
     }
 
     return eventLoop;
   },
-  run: function(eventLoop, party) {
+  this.run = function() {
+    var eventLoop = this.eventLoop();
     for(var i = 0; i < eventLoop.length; i++) {
       eventLoop[i].call(party);
       if(party.health <= 0) {
@@ -28,6 +24,7 @@ var Game = {
     alert('You made it! Welcome to Oregon City');
   }
 }
-// sample debugging code
-var party = new Party()
-window.console.log(party)
+
+party = new Party();
+game = new Game(party);
+game.run();
