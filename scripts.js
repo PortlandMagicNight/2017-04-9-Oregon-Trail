@@ -28,3 +28,6 @@ var Game = {
     alert('You made it! Welcome to Oregon City');
   }
 }
+// sample debugging code
+var party = new Party()
+window.console.log(party)
