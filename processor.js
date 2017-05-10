@@ -30,7 +30,7 @@ Event.prototype.call = function(party) {
       party.health--;
       break;
     case "carpenter":
-      party.health = party.health -= 2;
+      party.health -= 2;
       break;
     case "teacher":
       party.health -= 4;
