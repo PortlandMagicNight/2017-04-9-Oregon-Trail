@@ -1,0 +1,1 @@
+window.prompt("Welcome to Oregon Trail!\nWhat do you want to do?")
